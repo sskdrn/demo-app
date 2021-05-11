@@ -1,11 +1,8 @@
-#Specifies the runtime environment
-runtime: python39 
+# Specifies the runtime environment
+runtime: python37 
 
-#Specifies the instance class (Select it based on expected traffic)
+# Specifies the instance class (Select it based on expected traffic)
 instance_class: F2
 
-
-handlers:
-
-- url: /.* #All routes
-  secure: optional #Allow HTTPS when requested
+# The Entry point for the application
+entrypoint: python app.py
