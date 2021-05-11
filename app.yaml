@@ -1,0 +1,11 @@
+#Specifies the runtime environment
+runtime: python39 
+
+#Specifies the instance class (Select it based on expected traffic)
+instance_class: F2
+
+
+handlers:
+
+- url: /.* #All routes
+  secure: optional #Allow HTTPS when requested
